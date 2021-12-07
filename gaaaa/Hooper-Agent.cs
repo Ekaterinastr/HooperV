@@ -24,7 +24,7 @@ namespace gaaaa
             agentBindingSource.DataSource = db.Agent.ToList();
             agentTypeBindingSource.DataSource = db.AgentType.ToList();
         }
-
+      
         private void agentDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -62,29 +62,29 @@ namespace gaaaa
 
         private void agentDataGridView_CurrentCellChanged(object sender, EventArgs e)
         {
-
+            Agent agent = (Agent)agentBindingSource.Current;
+            try
+            {
+                if (agent == null) return;
+                if (agent.Logo != "")
+                {
+                    string str = agent.Logo.Substring(1);
+                    LogoPict.Image = Image.FromFile(str);
+                }
+                else
+                {
+                    LogoPict.Image = Image.FromFile("agents\\picture.png");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void agentBindingSource_CurrentChanged(object sender, EventArgs e)
         {
-            //Agent agent = (Agent)agentBindingSource.Current;
-            //try
-            //{
-            //    if (agent == null) return;
-            //    if (agent.Logo != "")
-            //    {
-            //        string str = agent.Logo.Substring(1);
-            //        LogoPict.Image = Image.FromFile(str);
-            //    }
-            //    else
-            //    {
-            //        LogoPict.Image = Image.FromFile("agents\\picture.png");
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message);
-            //}
+            
         }
 
         private void addButton_Click(object sender, EventArgs e)
