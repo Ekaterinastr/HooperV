@@ -53,10 +53,15 @@ namespace gaaaa
             this.editButton = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.agentDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agentTypeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPict)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // agentDataGridView
@@ -75,7 +80,7 @@ namespace gaaaa
             this.Email,
             this.dataGridViewTextBoxColumn11});
             this.agentDataGridView.DataSource = this.agentBindingSource;
-            this.agentDataGridView.Location = new System.Drawing.Point(29, 129);
+            this.agentDataGridView.Location = new System.Drawing.Point(29, 173);
             this.agentDataGridView.Name = "agentDataGridView";
             this.agentDataGridView.Size = new System.Drawing.Size(885, 217);
             this.agentDataGridView.TabIndex = 1;
@@ -161,7 +166,7 @@ namespace gaaaa
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(158)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(29, 12);
+            this.button1.Location = new System.Drawing.Point(65, 91);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(235, 39);
             this.button1.TabIndex = 2;
@@ -173,7 +178,7 @@ namespace gaaaa
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(158)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(29, 57);
+            this.button2.Location = new System.Drawing.Point(306, 97);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(235, 36);
             this.button2.TabIndex = 3;
@@ -187,7 +192,7 @@ namespace gaaaa
             this.comboBox1.DisplayMember = "Title";
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(398, 66);
+            this.comboBox1.Location = new System.Drawing.Point(813, 120);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(235, 28);
             this.comboBox1.TabIndex = 4;
@@ -198,7 +203,7 @@ namespace gaaaa
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(427, 37);
+            this.label1.Location = new System.Drawing.Point(842, 91);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(157, 20);
             this.label1.TabIndex = 5;
@@ -208,7 +213,7 @@ namespace gaaaa
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(158)))));
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(679, 49);
+            this.button3.Location = new System.Drawing.Point(756, 447);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(235, 45);
             this.button3.TabIndex = 6;
@@ -219,10 +224,10 @@ namespace gaaaa
             // LogoPict
             // 
             this.LogoPict.BackColor = System.Drawing.Color.White;
-            this.LogoPict.Location = new System.Drawing.Point(751, 360);
+            this.LogoPict.Location = new System.Drawing.Point(920, 222);
             this.LogoPict.Name = "LogoPict";
-            this.LogoPict.Size = new System.Drawing.Size(184, 132);
-            this.LogoPict.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LogoPict.Size = new System.Drawing.Size(153, 144);
+            this.LogoPict.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.LogoPict.TabIndex = 7;
             this.LogoPict.TabStop = false;
             // 
@@ -230,7 +235,7 @@ namespace gaaaa
             // 
             this.delButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(158)))));
             this.delButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.delButton.Location = new System.Drawing.Point(451, 387);
+            this.delButton.Location = new System.Drawing.Point(451, 449);
             this.delButton.Name = "delButton";
             this.delButton.Size = new System.Drawing.Size(146, 43);
             this.delButton.TabIndex = 15;
@@ -242,7 +247,7 @@ namespace gaaaa
             // 
             this.editButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(158)))));
             this.editButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.editButton.Location = new System.Drawing.Point(235, 387);
+            this.editButton.Location = new System.Drawing.Point(235, 449);
             this.editButton.Name = "editButton";
             this.editButton.Size = new System.Drawing.Size(146, 43);
             this.editButton.TabIndex = 14;
@@ -254,7 +259,7 @@ namespace gaaaa
             // 
             this.addButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(150)))), ((int)(((byte)(158)))));
             this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addButton.Location = new System.Drawing.Point(29, 387);
+            this.addButton.Location = new System.Drawing.Point(29, 449);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(146, 43);
             this.addButton.TabIndex = 13;
@@ -266,7 +271,7 @@ namespace gaaaa
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox1.Location = new System.Drawing.Point(45, 99);
+            this.checkBox1.Location = new System.Drawing.Point(322, 139);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(128, 24);
             this.checkBox1.TabIndex = 16;
@@ -274,11 +279,43 @@ namespace gaaaa
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(220)))), ((int)(((byte)(254)))));
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Location = new System.Drawing.Point(1, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1084, 85);
+            this.panel1.TabIndex = 17;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = global::gaaaa.Properties.Resources.Попрыженок;
+            this.pictureBox1.Location = new System.Drawing.Point(287, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(120, 82);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(413, 32);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(125, 24);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Попрыжонок";
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(947, 529);
+            this.ClientSize = new System.Drawing.Size(1085, 529);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.delButton);
             this.Controls.Add(this.editButton);
@@ -297,6 +334,9 @@ namespace gaaaa
             ((System.ComponentModel.ISupportInitialize)(this.agentTypeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.agentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPict)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -327,6 +367,9 @@ namespace gaaaa
         private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
