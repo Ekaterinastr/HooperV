@@ -112,8 +112,8 @@ namespace gaaaa
         private void delButton_Click(object sender, EventArgs e)
         {
             Agent ag = (Agent)agentBindingSource.Current;
-            DialogResult dr = MessageBox.Show("Вы действтиельно хотите удалить водителя - " +
-                ag.Title.ToString() + "?", "Удаление водителя",
+            DialogResult dr = MessageBox.Show("Вы действтиельно хотите удалить агента - " +
+                ag.Title.ToString() + "?", "Удаление агента",
             MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)
             {
@@ -145,6 +145,11 @@ namespace gaaaa
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LogoPict_Click(object sender, EventArgs e)
         {
 
         }

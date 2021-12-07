@@ -224,12 +224,13 @@ namespace gaaaa
             // LogoPict
             // 
             this.LogoPict.BackColor = System.Drawing.Color.White;
-            this.LogoPict.Location = new System.Drawing.Point(920, 222);
+            this.LogoPict.Location = new System.Drawing.Point(920, 191);
             this.LogoPict.Name = "LogoPict";
             this.LogoPict.Size = new System.Drawing.Size(153, 144);
             this.LogoPict.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.LogoPict.TabIndex = 7;
             this.LogoPict.TabStop = false;
+            this.LogoPict.Click += new System.EventHandler(this.LogoPict_Click);
             // 
             // delButton
             // 
